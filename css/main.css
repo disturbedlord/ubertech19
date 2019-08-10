@@ -2573,6 +2573,7 @@ html.no-csstransitions .home-content__main {
 */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    position: relative;
     background-color:rgba(0, 0, 0, 0)!important;
     border: 1px solid white !important;
     padding-bottom: 6% !important;
@@ -2580,7 +2581,7 @@ html.no-csstransitions .home-content__main {
     font-family: "Ubuntu", serif;
     border-radius: 5px;
     cursor: pointer;
-    padding: 18px;
+    padding: 8px;
     width: 100%;
     text-align: left;
     border: none;
@@ -2588,8 +2589,11 @@ html.no-csstransitions .home-content__main {
     transition: 0.4s;
   }
 
- #arrow{
+ #arrow , .arrow{
+     position: relative;
      display: inline-block;
+     float: right;
+     top: 0px;
  }
 
   .accordion:hover{
@@ -2638,6 +2642,14 @@ html.no-csstransitions .home-content__main {
 /* -------------------------------------------------------------------
  * ## bricks/masonry
  * ------------------------------------------------------------------- */
+
+
+.space {
+    position: relative;
+    padding: 10px;
+/*    margin: 100px;*/
+}
+
 .masonry:after {
     content: "";
     display: table;
@@ -2650,7 +2662,7 @@ html.no-csstransitions .home-content__main {
 
 .masonry__brick {
     float: left;
-    padding: 0;
+    padding-bottom: 0px;
 }
 
 .item-folio {
