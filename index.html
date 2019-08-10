@@ -5,13 +5,9 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
-<head>
+<head> <!--asdad-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
 
@@ -31,12 +27,12 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <script src="js/script.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -53,8 +49,11 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="" alt="Homepage">
+             <div class="logo">
+               <a href="index.html"> <img class = "logo-icons" src="images/logo.png" alt="Homepage"> </a>
+                <img class = "logo-icons" src="images/ACE logo bg.png" style="margin-top: 15px;"  alt="Ace logo">
+               <a href="https://www.srmist.edu.in"> <img class = "logo-icons" src="images/footer_logo.png" style="margin-top: 15px;" alt="SRM logo"></a>
+            </div>
             </a>
         </div>
 
@@ -69,12 +68,10 @@
                     <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll" href="#events" title="events">Events</a></li>
-                    <li><a class="smoothscroll" href="#" title="sponsors">Sponsors</a></li>
+                    <li><a class="smoothscroll" href="#sponsors" title="sponsors">Sponsors</a></li>
                     <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
                 </ul>
 
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto
-                    sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
 
                 <ul class="header-nav__social">
                     <li>
@@ -90,7 +87,7 @@
                 </ul>
 
             </div> <!-- end header-nav__content -->
-    
+
         </nav> <!-- end header-nav -->
 
         <a class="header-menu-toggle" href="#0">
@@ -116,12 +113,15 @@
                 <h1>
                     Ubertech '19 <br>
                 </h1>
+                <h4>
+                    30th - 31st August 2019<br>
+                </h4>
 
                 <div class="home-content__buttons">
-                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                    <a href="#events" class="smoothscroll btn btn--stroke">
                         Explore events
                     </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
+                    <a href="http://tiny.cc/UT19" class="btn btn--stroke">
                         Register
                     </a>
                 </div>
@@ -199,7 +199,7 @@
                 <h5>Colleges </h5> -->
             </div>
 
-       
+        </div> 
 
         <div class="about__line"></div>
 
@@ -214,7 +214,7 @@
 
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
                 <div class="col-full">
-                    <h3 class="subhead masonry">Explore events</h3>
+                    <h3 class="subhead">Explore events</h3>
                     <h1 class="display-2 display-2--light"></h1>
                 </div>
             </div> <!-- end section-header -->
@@ -222,65 +222,787 @@
         </div> <!-- end intro-wrap -->
 
         <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="tabs is-centered title is-1" id="tabs">
-                  <ul>
-                    <li class="is-active" data-tab="1"><a>Technical</a></li>
-                    <li data-tab="2"><a>Non-Technical</a></li>
-                    <li data-tab="3"><a>Workshop's</a></li>
-                    <li data-tab="4"><a>Paper presentation</a></li>
-                  </ul>
+               <button class="accordion">Technical Events <img id="arrow" src="images/down-arrow-white.png" width="20">  </button> 
+                <div class="panel">
+                  <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/web.jpg" id="myBtn" class="thumb-link" title="The Beetle Car"
+                                    data-size="1050x700">
+                                    <img src="images/web.jpg"
+                                       >
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                        Web Development
+                                </h3>
+                                <p class="item-folio__cat">
+                                   
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+                    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close closeBtn">&times;</span>
+    
+        <img src="images/web.jpg">
+
+  </div>
+
+</div>
+                    <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                            <div class="item-folio">
+    
+                                <div class="item-folio__thumb">
+                                    <a href="images/portfolio/proto.jpg"  id="myBtn2" class="thumb-link" title="The Beetle Car"
+                                        data-size="1050x700">
+                                        <img src="images/portfolio/proto.jpg"
+                                            srcset="images/portfolio/proto.jpg 1x, images/portfolio/proto.jpg 2x" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">
+                                        Prototype Design
+                                    </h3>
+                                    <p class="item-folio__cat">
+                                        
+                                    </p>
+                                </div>
+    
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+    
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                        dolorem corrupti neque nisi.</p>
+                                </div>
+    
+                            </div>
+                        </div> <!-- end masonry__brick -->
+                        <!-- The Modal -->
+<div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close2 closeBtn">&times;</span>
+          <div class="pop-up">
+              <h2 style="color: white;">TITLE GOES HERE</h2>
+              <p>description goes here 2</p>
+          </div>
+        </div>
+      
+      </div>
+                        <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                <div class="item-folio">
+        
+                                    <div class="item-folio__thumb">
+                                        <a href="images/portfolio/ctf.jpg" id="myBtn3" class="thumb-link" title="The Beetle Car"
+                                            data-size="1050x700">
+                                            <img src="images/portfolio/ctf.jpg"
+                                                srcset="images/portfolio/ctf.jpg 1x, images/portfolio/ctf.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                           Catch the Flag
+                                        </h3>
+                                        <p class="item-folio__cat">
+                                            
+                                        </p>
+                                    </div>
+        
+                                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                        <i class="icon-link"></i>
+                                    </a>
+        
+                                    <div class="item-folio__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                            dolorem corrupti neque nisi.</p>
+                                    </div>
+        
+                                </div>
+                            </div> <!-- end masonry__brick -->
+                            <div id="myModal3" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                      <span class="close3 closeBtn">&times;</span>
+                                      <div class="pop-up">
+                                          <h2 style="color: white;">TITLE GOES HERE</h2>
+                                          <p>description goes here 3</p>
+                                      </div>
+                                    </div>
+                                  
+                            </div>
+
+                            <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                    <div class="item-folio">
+            
+                                        <div class="item-folio__thumb">
+                                            <a href="images/streak.jpg" id="myBtn4" class="thumb-link" title="The Beetle Car"
+                                                data-size="1050x700">
+                                                <img src="images/streak.jpg"
+                                                    srcset="images/streak.jpg 1x, images/streak.jpg 2x" alt="">
+                                            </a>
+                                        </div>
+            
+                                        <div class="item-folio__text">
+                                            <h3 class="item-folio__title">
+                                                Streak Coding
+                                            </h3>
+                                            <p class="item-folio__cat">
+                                             
+                                            </p>
+                                        </div>
+            
+                                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                            <i class="icon-link"></i>
+                                        </a>
+            
+                                        <div class="item-folio__caption">
+                                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                dolorem corrupti neque nisi.</p>
+                                        </div>
+            
+                                    </div>
+                                </div> <!-- end masonry__brick -->
+
+                                <!-- The Modal -->
+<div id="myModal4" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close4 closeBtn">&times;</span>
+          <div class="pop-up">
+              <h2 style="color: white;">TITLE GOES HERE</h2>
+              <p>description goes here 4</p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>            
+                
+                <button class="accordion"><span>Non-Technical Events <img class="arrow"src="images/down-arrow-white.png" width="20"> </span> </button>
+                <div class="panel">
+                  <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/ipl auction.jpg" id="myBtn5" class="thumb-link" title="The Beetle Car"
+                                    data-size="1050x700">
+                                    <img src="images/ipl auction.jpg"
+                                        srcset="images/ipl auction.jpg 1x, images/ipl auction.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    IPL Auction
+                                </h3>
+                                <p class="item-folio__cat">
+                                   
+                                </p>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                    dolorem corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div id="myModal5" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                              <span class="close5 closeBtn">&times;</span>
+                              <div class="pop-up">
+                                  <h2 style="color: white;">TITLE GOES HERE</h2>
+                                  <p>description goes here 6</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                    
+        
+                    <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                            <div class="item-folio">
+    
+                                <div class="item-folio__thumb">
+                                    <a href="images/don't mess.jpg" id="myBtn6" class="thumb-link" title="The Beetle Car"
+                                        data-size="1050x700">
+                                        <img src="images/don't mess.jpg"
+                                            srcset="images/don't mess.jpg 1x, images/don't mess.jpg 2x" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="item-folio__text">
+                                    <h3 class="item-folio__title">
+                                        Don't Mess With Me
+                                    </h3>
+                                    <p class="item-folio__cat">
+                                        
+                                    </p>
+                                </div>
+    
+                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                    <i class="icon-link"></i>
+                                </a>
+    
+                                <div class="item-folio__caption">
+                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                        dolorem corrupti neque nisi.</p>
+                                </div>
+    
+                            </div>
+                        </div> <!-- end masonry__brick -->
+
+                        <div id="myModal6" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span class="close6 closeBtn">&times;</span>
+                                  <div class="pop-up">
+                                      <h2 style="color: white;">TITLE GOES HERE</h2>
+                                      <p>description goes here 6</p>
+                                  </div>
+                                </div>
+                              
+                              </div>
+
+
+                        <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                <div class="item-folio">
+        
+                                    <div class="item-folio__thumb">
+                                        <a href="images/detective.jpg" id="myBtn7" class="thumb-link" title="The Beetle Car"
+                                            data-size="1050x700">
+                                            <img src="images/detective.jpg"
+                                                srcset="images/detective.jpg 1x, images/detective.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            Detective
+                                        </h3>
+                                        <p class="item-folio__cat">
+                                            
+                                        </p>
+                                    </div>
+        
+                                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                        <i class="icon-link"></i>
+                                    </a>
+        
+                                    <div class="item-folio__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                            dolorem corrupti neque nisi.</p>
+                                    </div>
+        
+                                </div>
+                            </div> <!-- end masonry__brick -->
+
+                            <div id="myModal7" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                      <span class="close7 closeBtn">&times;</span>
+                                      <div class="pop-up">
+                                          <h2 style="color: white;">TITLE GOES HERE</h2>
+                                          <p>description goes here 7</p>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+
+                            <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                    <div class="item-folio">
+            
+                                        <div class="item-folio__thumb">
+                                            <a href="images/portfolio/gallery/p3.jpg" id="myBtn8"class="thumb-link" title="The Beetle Car"
+                                                data-size="1050x700">
+                                                <img src="images/black.jpg"
+                                                    srcset="images/black.jpg 1x, images/portfolio/black.jpg 2x" alt="">
+                                            </a>
+                                        </div>
+            
+                                        <div class="item-folio__text">
+                                            <h3 class="item-folio__title">
+                                                Emcee
+                                            </h3>
+                                            <p class="item-folio__cat">
+                                               
+                                            </p>
+                                        </div>
+            
+                                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                            <i class="icon-link"></i>
+                                        </a>
+            
+                                        <div class="item-folio__caption">
+                                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                dolorem corrupti neque nisi.</p>
+                                        </div>
+            
+                                    </div>
+                                </div> <!-- end masonry__brick -->
+                                <div id="myModal8" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                          <span class="close8 closeBtn">&times;</span>
+                                          <div class="pop-up">
+                                              <h2 style="color: white;">TITLE GOES HERE</h2>
+                                              <p>description goes here 8</p>
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+
+                                      <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                            <div class="item-folio">
+                    
+                                                <div class="item-folio__thumb">
+                                                    <a href="images/portfolio/gallery/p3.jpg" id="myBtn15"class="thumb-link" title="The Beetle Car"
+                                                        data-size="1050x700">
+                                                        <img src="images/black.jpg"
+                                                            srcset="images/black.jpg 1x, images/portfolio/black.jpg 2x" alt="">
+                                                    </a>
+                                                </div>
+                    
+                                                <div class="item-folio__text">
+                                                    <h3 class="item-folio__title">
+                                                        Channel Surfing
+                                                    </h3>
+                                                    <p class="item-folio__cat">
+                                                       
+                                                    </p>
+                                                </div>
+                    
+                                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                    <i class="icon-link"></i>
+                                                </a>
+                    
+                                                <div class="item-folio__caption">
+                                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                        dolorem corrupti neque nisi.</p>
+                                                </div>
+                    
+                                            </div>
+                                        </div> <!-- end masonry__brick -->
+                                        <div id="myModal15" class="modal">
+        
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                  <span class="close15 closeBtn">&times;</span>
+                                                  <div class="pop-up">
+                                                      <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                      <p>description goes here 15</p>
+                                                  </div>
+                                                </div>
+                                              
+                                              </div>
+                                        
+                                      <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                            <div class="item-folio">
+                    
+                                                <div class="item-folio__thumb">
+                                                    <a href="images/portfolio/gallery/p3.jpg" id="myBtn16"class="thumb-link" title="The Beetle Car"
+                                                        data-size="1050x700">
+                                                        <img src="images/black.jpg"
+                                                            srcset="images/black.jpg 1x, images/portfolio/black.jpg 2x" alt="">
+                                                    </a>
+                                                </div>
+                    
+                                                <div class="item-folio__text">
+                                                    <h3 class="item-folio__title">
+                                                        Navarasam
+                                                    </h3>
+                                                    <p class="item-folio__cat">
+                                                       
+                                                    </p>
+                                                </div>
+                    
+                                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                    <i class="icon-link"></i>
+                                                </a>
+                    
+                                                <div class="item-folio__caption">
+                                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                        dolorem corrupti neque nisi.</p>
+                                                </div>
+                    
+                                            </div>
+                                        </div> <!-- end masonry__brick -->
+                                        <div id="myModal16" class="modal">
+        
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                  <span class="close16 closeBtn">&times;</span>
+                                                  <div class="pop-up">
+                                                      <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                      <p>description goes here 16</p>
+                                                  </div>
+                                                </div>
+                                              
+                                              </div>
+                                              
+
+
+
+
+
                 </div>
-            </div> <!-- end works-content -->
-        </div>
+                
+                <button class="accordion"><span>Gaming Events <img class="arrow"src="images/down-arrow-white.png" width="20"> </span></button>
+                <div class="panel">
+                        <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                <div class="item-folio">
         
-        <div id="tab-content">
-          
-          <div class="w3-content w3-display-container is-active" data-content="1" >
-              <img class="mySlides" src="images/portfolio/p1.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p2.jpeg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p3.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p4.jpg" style="width:100%; padding: 0px 20px;">
-
-              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-            
-            
-             <div class="w3-content w3-display-container" data-content="2">
-              <img class="mySlides" src="images/portfolio/p1.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p2.jpeg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p3.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p4.jpg" style="width:100%; padding: 0px 20px;">
-
-              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-            
-              <div class="w3-content w3-display-container" data-content="3">
-              <img class="mySlides" src="images/portfolio/p1.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p2.jpeg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p3.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p4.jpg" style="width:100%; padding: 0px 20px;">
-
-              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-            
-              <div class="w3-content w3-display-container" data-content="4">
-              <img class="mySlides" src="images/portfolio/p1.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p2.jpeg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p3.jpg" style="width:100%; padding: 0px 20px;">
-              <img class="mySlides" src="images/portfolio/p4.jpg" style="width:100%; padding: 0px 20px;">
-
-              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-            
-            
-        </div>
-
+                                    <div class="item-folio__thumb">
+                                        <a href="images/8ball.jpg" id="myBtn9" class="thumb-link" title="The Beetle Car"
+                                            data-size="1050x700">
+                                            <img src="images/8ball.jpg"
+                                                srcset="images/8ball.jpg 1x, images/portfolio/8ball.jpg 2x" alt="">
+                                        </a>
+                                    </div>
         
+                                    <div class="item-folio__text">
+                                        <h3 class="item-folio__title">
+                                            8 Ball Pool (Mobile)
+                                        </h3>
+                                        <p class="item-folio__cat">
+                                            
+                                        </p>
+                                    </div>
+        
+                                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                        <i class="icon-link"></i>
+                                    </a>
+        
+                                    <div class="item-folio__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                            dolorem corrupti neque nisi.</p>
+                                    </div>
+        
+                                </div>
+                            </div> <!-- end masonry__brick -->
+                            <div id="myModal9" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                      <span class="close9 closeBtn">&times;</span>
+                                      <div class="pop-up">
+                                          <h2 style="color: white;">TITLE GOES HERE</h2>
+                                          <p>description goes here 8 ball</p>
+                                      </div>
+                                    </div>
+                                  
+                                  </div>
+
+
+                            <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                    <div class="item-folio">
+            
+                                        <div class="item-folio__thumb">
+                                            <a href="images/csgo.jpg" id="myBtn10" class="thumb-link" title="The Beetle Car"
+                                                data-size="1050x700">
+                                                <img src="images/csgo.jpg"
+                                                    srcset="images/csgo.jpg 1x, images/csgo.jpg 2x" alt="">
+                                            </a>
+                                        </div>
+            
+                                        <div class="item-folio__text">
+                                            <h3 class="item-folio__title">
+                                                CS GO (PC)
+                                            </h3>
+                                            <p class="item-folio__cat">
+                                                
+                                            </p>
+                                        </div>
+            
+                                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                            <i class="icon-link"></i>
+                                        </a>
+            
+                                        <div class="item-folio__caption">
+                                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                dolorem corrupti neque nisi.</p>
+                                        </div>
+            
+                                    </div>
+                                </div> <!-- end masonry__brick -->
+                                <div id="myModal10" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                          <span class="close10 closeBtn">&times;</span>
+                                          <div class="pop-up">
+                                              <h2 style="color: white;">TITLE GOES HERE</h2>
+                                              <p>description goes here CS GO</p>
+                                          </div>
+                                        </div>
+                                      
+                                      </div>
+                                <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                        <div class="item-folio">
+                
+                                            <div class="item-folio__thumb">
+                                                <a href="images/dota 2.jpg" id="myBtn11" class="thumb-link" title="The Beetle Car"
+                                                    data-size="1050x700">
+                                                    <img src="images/dota 2.jpg"
+                                                        srcset="images/dota 2.jpg 1x, images/dota 2.jpg 2x" alt="">
+                                                </a>
+                                            </div>
+                
+                                            <div class="item-folio__text">
+                                                <h3 class="item-folio__title">
+                                                    Dota 2
+                                                </h3>
+                                                <p class="item-folio__cat">
+                                                    
+                                                </p>
+                                            </div>
+                
+                                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                <i class="icon-link"></i>
+                                            </a>
+                
+                                            <div class="item-folio__caption">
+                                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                    dolorem corrupti neque nisi.</p>
+                                            </div>
+                
+                                        </div>
+                                    </div> <!-- end masonry__brick -->
+                                    <div id="myModal11" class="modal">
+
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <span class="close11 closeBtn">&times;</span>
+                                              <div class="pop-up">
+                                                  <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                  <p>description goes here Dota 2</p>
+                                              </div>
+                                            </div>
+                                          
+                                          </div>
+                                    <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                            <div class="item-folio">
+                    
+                                                <div class="item-folio__thumb">
+                                                    <a href="images/paladins.jpg" id="myBtn12" class="thumb-link" title="The Beetle Car"
+                                                        data-size="1050x700">
+                                                        <img src="images/paladins.jpg"
+                                                            srcset="images/paladins.jpg 1x, images/paladins.jpg 2x" alt="">
+                                                    </a>
+                                                </div>
+                    
+                                                <div class="item-folio__text">
+                                                    <h3 class="item-folio__title">
+                                                      Paladins
+                                                    </h3>
+                                                    <p class="item-folio__cat">
+                                                        
+                                                    </p>
+                                                </div>
+                    
+                                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                    <i class="icon-link"></i>
+                                                </a>
+                    
+                                                <div class="item-folio__caption">
+                                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                        dolorem corrupti neque nisi.</p>
+                                                </div>
+                    
+                                            </div>
+                                        </div> <!-- end masonry__brick -->
+                                        <div id="myModal12" class="modal">
+
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                  <span class="close12 closeBtn">&times;</span>
+                                                  <div class="pop-up">
+                                                      <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                      <p>description goes here Paladins</p>
+                                                  </div>
+                                                </div>
+                                              
+                                              </div>
+
+                                        <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                                <div class="item-folio">
+                        
+                                                    <div class="item-folio__thumb">
+                                                        <a href="images/battlefield.jpg" id="myBtn13" class="thumb-link" title="The Beetle Car"
+                                                            data-size="1050x700">
+                                                            <img src="images/battlefield.jpg"
+                                                                srcset="images/battlefield.jpg 1x, images/battlefield.jpg 2x" alt="">
+                                                        </a>
+                                                    </div>
+                        
+                                                    <div class="item-folio__text">
+                                                        <h3 class="item-folio__title">
+                                                            Battlefield 1 (PS4)
+                                                        </h3>
+                                                        <p class="item-folio__cat">
+                                                        
+                                                        </p>
+                                                    </div>
+                        
+                                                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                        <i class="icon-link"></i>
+                                                    </a>
+                        
+                                                    <div class="item-folio__caption">
+                                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                            dolorem corrupti neque nisi.</p>
+                                                    </div>
+                        
+                                                </div>
+                                            </div> <!-- end masonry__brick -->
+
+                                            <div id="myModal13" class="modal">
+
+                                                    <!-- Modal content -->
+                                                    <div class="modal-content">
+                                                      <span class="close13 closeBtn">&times;</span>
+                                                      <div class="pop-up">
+                                                          <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                          <p>description goes here Battlefield</p>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                  </div>
+
+                                            <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                                    <div class="item-folio">
+                            
+                                                        <div class="item-folio__thumb">
+                                                            <a href="images/mini militia.jpg" id="myBtn14" class="thumb-link" title="The Beetle Car"
+                                                                data-size="1050x700">
+                                                                <img src="images/mini militia.jpg"
+                                                                    srcset="images/mini militia.jpg 1x, images/mini militia.jpg 2x" alt="">
+                                                            </a>
+                                                        </div>
+                            
+                                                        <div class="item-folio__text">
+                                                            <h3 class="item-folio__title">
+                                                               Mini Militia (Mobile)
+                                                            </h3>
+                                                            <p class="item-folio__cat">
+                                                                
+                                                            </p>
+                                                        </div>
+                            
+                                                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                            <i class="icon-link"></i>
+                                                        </a>
+                            
+                                                        <div class="item-folio__caption">
+                                                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                                dolorem corrupti neque nisi.</p>
+                                                        </div>
+                            
+                                                    </div>
+                                                </div> <!-- end masonry__brick --> 
+                                                <div id="myModal14" class="modal">
+
+                                                        <!-- Modal content -->
+                                                        <div class="modal-content">
+                                                          <span class="close14 closeBtn">&times;</span>
+                                                          <div class="pop-up">
+                                                              <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                              <p>description goes here Mini Militia</p>
+                                                          </div>
+                                                        </div>
+                                                      
+                                                      </div>
+
+
+                                                      <div class="masonry__brick" data-aos="fade-up" style="padding: 2px">
+                                                            <div class="item-folio">
+                                    
+                                                                <div class="item-folio__thumb">
+                                                                    <a href="images/fifa 18.jpg" id="myBtn17" class="thumb-link" title="The Beetle Car"
+                                                                        data-size="1050x700">
+                                                                        <img src="images/fifa 18.jpg"
+                                                                            srcset="images/fifa 18.jpg 1x, images/fifa 18.jpg  2x" alt="">
+                                                                    </a>
+                                                                </div>
+                                    
+                                                                <div class="item-folio__text">
+                                                                    <h3 class="item-folio__title">
+                                                                      FIFA 18 (PS4)
+                                                                    </h3>
+                                                                    <p class="item-folio__cat">
+                                                                        
+                                                                    </p>
+                                                                </div>
+                                    
+                                                                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                                                    <i class="icon-link"></i>
+                                                                </a>
+                                    
+                                                                <div class="item-folio__caption">
+                                                                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                                                        dolorem corrupti neque nisi.</p>
+                                                                </div>
+                                    
+                                                            </div>
+                                                        </div> <!-- end masonry__brick --> 
+                                                        <div id="myModal17" class="modal">
+        
+                                                                <!-- Modal content -->
+                                                                <div class="modal-content">
+                                                                  <span class="close17 closeBtn">&times;</span>
+                                                                  <div class="pop-up">
+                                                                      <h2 style="color: white;">TITLE GOES HERE</h2>
+                                                                      <p>description goes here Fifa</p>
+                                                                  </div>
+                                                                </div>
+                                                              
+                                                              </div>
+
+
+
+
+
+
+                                            
+                </div>
+
+ <!-- end col-full -->
+
+
     </section> <!-- end s-works -->
 
 
@@ -499,7 +1221,6 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright Glint 2017</span>
                     <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>
                 </div>
 
@@ -517,7 +1238,7 @@
 
     <!-- photoswipe background
     ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <!-- <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
         <div class="pswp__bg"></div>
         <div class="pswp__scroll-wrap">
@@ -552,7 +1273,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
     </div> <!-- end photoSwipe background -->
 
@@ -577,8 +1298,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-
 
     <script>
         VANTA.NET({

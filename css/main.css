@@ -59,6 +59,72 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
+
+/*pop*/
+/* The Modal (background) */
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    width: 100%;
+    width: 30rem !important;
+}
+
+.logo-icons{
+
+    width: 1000px;
+}
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+/*  margin: auto;*/
+  display: block;
+/*  width: 80%;
+*/
+    padding: 0px 20px;
+    height: 100%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.closeBtn {
+    display: inline-block;
+  color: #aaa;
+  float: left;
+    
+    margin: 0  0 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
 html {
     font-size: 10px;
 }
@@ -67,6 +133,7 @@ html {
     html {
         font-size: 9.411764705882353px;
     }
+    
 }
 
 html, body {
@@ -83,6 +150,7 @@ body {
     color: #757575;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -1261,7 +1329,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * display headings
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    
     .display-1 {
         font-size: 7.2rem;
     }
@@ -1514,7 +1581,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #39b54a;
+    color: #ffffff;
 }
 
 .header-nav p {
@@ -1810,6 +1877,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
     color: #FFFFFF;
 }
+.home-content h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 0;
+    color: #ffffff;
+}
 
 .home-content__main {
     padding-top: 24rem;
@@ -1897,7 +1971,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## home social
  * ------------------------------------------------------------------- */
 .home-social {
-    font-family: "montserrat-regular", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     list-style: none;
     margin: 0;
     position: absolute;
@@ -1946,7 +2020,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social span {
-    color: #39b54a;
+    color: #ffffff;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2152,7 +2226,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 300px) {
-    
     .s-home {
         background-color: white;
         min-height: 642px;
@@ -2247,7 +2320,7 @@ html.no-csstransitions .home-content__main {
 
 .stats__count {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 8.4rem;
+    font-size: 7rem;
     line-height: 1;
     color: #070707;
     position: relative;
@@ -2365,7 +2438,7 @@ html.no-csstransitions .home-content__main {
         font-size: 1.8rem;
     }
     .stats__count {
-        font-size: 7.8rem;
+        font-size: 6rem;
     }
 }
 
@@ -2499,8 +2572,57 @@ html.no-csstransitions .home-content__main {
  * # works
  *
  * ------------------------------------------------------------------- */
+
+/*ACCORDIAN
+*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color:rgba(0, 0, 0, 0)!important;
+    border: 1px solid white !important;
+    padding-bottom: 6% !important;
+    color:white !important;
+    font-family: "Ubuntu", serif;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+ #arrow{
+     display: inline-block;
+ }
+
+  .accordion:hover{
+      background-color: white !important;
+      color: black !important;
+  }
+
+  .activeAccordion{
+      background-color: white;
+  }
+
+  
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+
 .s-works {
-    background: #FFFFFF;
+    background: rgb(17, 17, 17);
     padding: 0 0 15rem 0;
     min-height: 800px;
     position: relative;
@@ -2710,6 +2832,21 @@ html.no-csstransitions .home-content__main {
     .item-folio__title, .item-folio__cat {
         font-size: 1.3rem;
     }
+    .accordion {
+        background-color:rgba(0, 0, 0, 0)!important;
+        border: 1px solid white !important;
+        padding-bottom: 6% !important;
+        color:white !important;
+        font-family: "Ubuntu", serif;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2729,6 +2866,21 @@ html.no-csstransitions .home-content__main {
     .item-folio__title, .item-folio__cat {
         font-size: 1.4rem;
     }
+    .accordion {
+        background-color:rgba(0, 0, 0, 0)!important;
+        border: 1px solid white !important;
+        padding-bottom: 6% !important;
+        color:white !important;
+        font-family: "Ubuntu", serif;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+      }
 }
 
 
@@ -2940,13 +3092,13 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-color: #000000;
+    background-image: url("../images/contact-bg.jpeg");
     background-repeat: no-repeat;
     background-position: center, center;
-    padding-top: 15rem;
-    padding-bottom: 12rem;
-    color: rgba(255, 255, 255, 0.5);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: #ffffff;
     position: relative;
 }
 
@@ -2956,8 +3108,15 @@ html.no-csstransitions .home-content__main {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
+    opacity:1;
     background-color: #151515;
+    display:inline-block;
+}
+
+.s-contact .contactContent{
+    display: inline-block;
+    background: #000000;
+    opacity: 1;
 }
 
 .s-contact .form-field {
@@ -3019,11 +3178,11 @@ html.no-csstransitions .home-content__main {
 
 .contact-content {
     max-width: 1000px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.4);
     padding-top: 6rem;
     padding-bottom: 6rem;
-    font-family: "montserrat-light", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1.5rem;
     line-height: 2;
     position: relative;
@@ -3342,6 +3501,15 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .s-contact .contactContent{
+        display: inline-block;
+        background: #000000;
+        opacity: 1;
+        color: #ffffff;
+    }
+}
+
 
 
 /* ===================================================================
@@ -3349,12 +3517,12 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 9rem 0 6rem;
+    padding: 1rem 0 1rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;
     text-align: center;
-    color: rgba(255, 255, 255, 0.3);
+    color: #000000;
 }
 
 footer h4 {
@@ -3374,7 +3542,7 @@ footer a:hover, footer a:focus, footer a:active {
 }
 
 footer .row {
-    max-width: 980px;
+    max-width: 100%;
 }
 
 
@@ -3609,8 +3777,6 @@ footer .row {
 }
 
 @media only screen and (max-width: 400px) {
-   
-    
     .footer-main .left {
         padding-right: 0;
     }
@@ -3622,19 +3788,15 @@ footer .row {
 
 /*# sourceMappingURL=main.css.map */
 
-#tab-content div {
-    width: 30%;
-  display: none;
-}
 
-#tab-content div.is-active {
-  display: block;
-}
-
-.mySlides {display:none;}
-
-@media only screen and (max-width: 600px) {
-    #tab-content div {
-        width: 100%;
+section_slider {
+    margin:0 auto;
+    max-width:55rem;
+    padding:1.625rem;
+    &.demo {
+      border: 2px dashed #e6e6e6;
+      border-radius: .8125rem;
+      box-shadow: inset 0px 0px 1.625rem rgba(0, 0, 0, 0.05);
+      margin-top: 1.625rem
     }
-}
+  }
