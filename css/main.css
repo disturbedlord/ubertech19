@@ -2562,6 +2562,11 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+.desc {
+    text-align: center;
+    font-size: 30px;
+}
+
 
 
 /* ===================================================================
